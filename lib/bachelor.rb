@@ -60,4 +60,5 @@ def get_average_age_for_season(data, season)
   num = 0
   num.each do |age|
     num += age.to_f
+  
 end
