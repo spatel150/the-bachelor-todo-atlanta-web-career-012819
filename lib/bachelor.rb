@@ -1,5 +1,5 @@
 def get_first_name_of_season_winner(data, season)
-  winner = ""
+  winner = nil
   data.each do |season_num, detail|
     if season == season_num
       detail.each do |key, value|
