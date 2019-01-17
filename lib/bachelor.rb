@@ -18,8 +18,8 @@ def get_contestant_name(data, occupation)
   name = ""
   data.each do |season_number, detail|
     detail.each do |key, value|
-      if status["occupation"] == occupation
-        return status["name"]
+      if key["occupation"] == occupation
+        return key["name"]
       end
     end
   end
@@ -34,7 +34,7 @@ def get_occupation(data, hometown)
   data.each do |season number, detail|
     detail.each do |key, value|
       if key["hometown"] == hometown
-        return status["occupation"]
+        return key["occupation"]
         break
       end
     end
