@@ -35,6 +35,7 @@ def get_occupation(data, hometown)
     detail.each do |key, value|
       if status["hometown"] == hometown
         return status["occupation"]
+        break
       end
     end
   end
