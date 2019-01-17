@@ -32,7 +32,7 @@ def get_occupation(data, hometown)
   name = nil
   data.each do |season_number, detail|
     detail.each do |key, value|
-      if key["hometown"] == hometown && name = nil
+      if key["hometown"] == hometown && name == nil
         name = key["occupation"]
       end
     end
