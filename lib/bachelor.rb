@@ -18,8 +18,8 @@ def get_contestant_name(data, occupation)
   name = ""
   data.each do |season_num, detail|
     detail.each do |key, value|
-      if status[:occupation] == "occupation"
-        return status[:name]
+      if status["occupation"] == "occupation"
+        return status["name"]
 end
 
 def count_contestants_by_hometown(data, hometown)
