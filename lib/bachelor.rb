@@ -1,6 +1,8 @@
 def get_first_name_of_season_winner(data, season)
   winner = nil
-  data.each do |
+  data.each do |season_number, detail|
+    detail.each do |key, value|
+      if seaso
 end
 
 def get_contestant_name(data, occupation)
