@@ -54,4 +54,8 @@ def get_average_age_for_season(data, season)
     if season_number == season
       detail.each do |key, value|
         average_age << key["age"]
+      end
+    end
+  end
+  
 end
