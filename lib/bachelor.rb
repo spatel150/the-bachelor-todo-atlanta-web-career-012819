@@ -18,8 +18,8 @@ def get_contestant_name(data, occupation)
   name = ""
   data.each do |season_number, detail|
     detail.each do |key, value|
-      if key[:occupation] == occupation
-        return key[:name]
+      if key["occupation"] == occupation
+        return key["name"]
       end
     end
   end
