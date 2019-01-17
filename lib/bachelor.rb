@@ -29,7 +29,7 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 def get_occupation(data, hometown)
-  name = nil
+  name = " "
   data.each do |season_number, detail|
     detail.each do |key, value|
       if key["hometown"] == hometown
