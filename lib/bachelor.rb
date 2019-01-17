@@ -33,8 +33,8 @@ def get_occupation(data, hometown)
   hometown = ""
   data.each do |season_number, detail|
     detail.each do |key, value|
-      if key[:hometown] == hometown
-        return key[:occupation]
+      if key["hometown"] == hometown
+        return key["occupation"]
         break
       end
     end
