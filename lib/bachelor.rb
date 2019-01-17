@@ -3,7 +3,7 @@ def get_first_name_of_season_winner(data, season)
   data.each do |season_num, detail|
     if season == season_num
       detail.each do |key, value|
-        if key[:status"] == "Winner"
+        if key[:status] == "Winner"
           winner = key["name"]
         end
       end
