@@ -14,7 +14,8 @@ end
 
 def get_contestant_name(data, occupation)
   name = nil
-  
+  data.each do |season_number, detail|
+    detail.each do |key, value|
   
 end
 
